@@ -105,7 +105,6 @@ main > #parte2 #bola{
     top: 45%;
     right: -25%;
     z-index: -1;
-    max-height: 700px;
 }
 
 img[alt="Primeira imagem"]{
