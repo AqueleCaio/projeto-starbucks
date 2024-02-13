@@ -1,16 +1,17 @@
 @charset "utf-8";
 
-html, body{
+*{ 
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header */
 
 header{
     margin: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 header .logo{
@@ -41,8 +42,16 @@ header nav a:hover{
 
 /* main */
 
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main > #parte1{
-    width: 50%;
+    width: 40%;
     margin: 0 10%;
 }
 
@@ -52,6 +61,74 @@ main > #parte1 .slogan{
     
 }
 
-.slogan strong{
+main > #parte1 .sobre{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+main > #parte1 p{
+    margin: 5px;
+}
+
+strong{
     color: #006241;
+}
+
+main > #parte1 button{
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: #006241;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+main > #parte1 button:hover{
+    background-color: #00754a;
+}
+
+main > #parte2{
+    float: right;
+}   
+
+main > #parte2 #bola{
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: #006241;
+    position: absolute;
+    top: 45%;
+    right: -25%;
+    z-index: -1;
+    max-height: 700px;
+}
+
+img[alt="Primeira imagem"]{
+    position: absolute;
+    top: 31%;
+    right: 5%;
+}
+
+main > #parte2 .social-media{
+    /* deixar o conteúdo do picture em coluna */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+main > #parte2 .social-media a{
+    margin: 10px;
+}
+
+picture{
+    position: relative;
+    left: 40%;
+
 }
